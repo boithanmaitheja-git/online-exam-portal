@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="20" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Teacher.CreateExam"
+      style="-fx-padding: 30px; -fx-background-color: #ffffff;">
+
+    <Label text="Create Exam" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="titleField" promptText="Exam Title" style="-fx-pref-width: 250;" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Select PDF" fx:id="selectPdfBtn" />
+        <Label fx:id="pdfLabel" text="No file selected" />
+    </HBox>
+
+    <DatePicker fx:id="datePicker" />
+
+    <TextField fx:id="timeField" promptText="Start time: HH:mm" />
+    <TextField fx:id="durationField" promptText="Duration (minutes)" />
+
+    <Button fx:id="createBtn" text="Create Exam" onAction="#createExam"
+            style="-fx-padding: 10 20;" />
+
+    <Label fx:id="statusLabel" text="" style="-fx-text-fill:red;" />
+
+</VBox>

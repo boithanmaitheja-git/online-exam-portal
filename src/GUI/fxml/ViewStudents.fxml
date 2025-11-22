@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="GUI.ViewStudents"
+            prefWidth="700" prefHeight="400" style="-fx-background-color: #fdfefe;">
+    
+    <VBox spacing="10" layoutX="25" layoutY="25" prefWidth="650" prefHeight="350">
+        <Label text="🎓 Students List"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
+        
+        <TableView fx:id="studentTable" prefHeight="320" prefWidth="650">
+            <columns>
+                <TableColumn fx:id="idCol" text="ID" prefWidth="80"/>
+                <TableColumn fx:id="nameCol" text="Name" prefWidth="150"/>
+                <TableColumn fx:id="emailCol" text="Email" prefWidth="180"/>
+                <TableColumn fx:id="usernameCol" text="Username" prefWidth="120"/>
+                <TableColumn fx:id="branchCol" text="Branch" prefWidth="120"/>
+                <TableColumn fx:id="yearCol" text="Year" prefWidth="80"/>
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

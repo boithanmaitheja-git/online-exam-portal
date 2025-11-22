@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="GUI.ViewResults"
+            prefWidth="750" prefHeight="420" style="-fx-background-color: #fef5e7;">
+    
+    <VBox spacing="10" layoutX="25" layoutY="25" prefWidth="700" prefHeight="350">
+        <Label text="📊 Exam Results"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #884ea0;" />
+        
+        <TableView fx:id="resultTable" prefHeight="340" prefWidth="700">
+            <columns>
+                <TableColumn fx:id="studentNameCol" text="Student Name" prefWidth="160"/>
+                <TableColumn fx:id="examTitleCol" text="Exam Title" prefWidth="160"/>
+                <TableColumn fx:id="scoreCol" text="Score" prefWidth="100"/>
+                <TableColumn fx:id="percentageCol" text="Percentage (%)" prefWidth="120"/>
+                <TableColumn fx:id="gradeCol" text="Grade" prefWidth="80"/>
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="20" alignment="TOP_CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Teacher.TeacherDashboard"
+      style="-fx-padding: 30px; -fx-background-color: #ffffff;">
+
+    <Label fx:id="welcomeLabel" text="Welcome Teacher"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Create Exam" onAction="#openCreateExam"
+                style="-fx-padding: 10; -fx-font-size: 14;" />
+        <Button text="Upload Questions PDF" onAction="#openUploadPDF"
+                style="-fx-padding: 10; -fx-font-size: 14;" />
+    </HBox>
+
+    <Label text="Your Exams"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <ScrollPane fitToWidth="true" style="-fx-background:#ffffff;">
+        <VBox fx:id="examListBox" spacing="10"
+              style="-fx-padding: 10;" />
+    </ScrollPane>
+
+</VBox>

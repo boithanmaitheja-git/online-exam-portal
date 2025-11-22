@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="20" alignment="TOP_CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Student.AttemptExam"
+      style="-fx-padding: 20px; -fx-background-color: #ffffff;">
+
+    <Label fx:id="examTitleLabel" text="Exam Title"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <Label fx:id="timerLabel" text="00:00:00"
+           style="-fx-font-size: 18px; -fx-text-fill: red;" />
+
+    <Label fx:id="questionLabel"
+           wrapText="true"
+           style="-fx-font-size: 16px; -fx-padding: 10;" />
+
+    <VBox spacing="10">
+        <RadioButton fx:id="optA" toggleGroup="$optionsGroup" />
+        <RadioButton fx:id="optB" toggleGroup="$optionsGroup" />
+        <RadioButton fx:id="optC" toggleGroup="$optionsGroup" />
+        <RadioButton fx:id="optD" toggleGroup="$optionsGroup" />
+    </VBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Previous" onAction="#prevQ" />
+        <Button text="Next" onAction="#nextQ" />
+    </HBox>
+
+    <Button text="Submit Exam" onAction="#submitExam"
+            style="-fx-padding: 10 20;" />
+
+</VBox>

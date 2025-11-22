@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Teacher.UploadPDF"
+      alignment="CENTER"
+      spacing="15"
+      style="-fx-padding: 20; -fx-background-color: #ffffff;">
+
+    <Label text="Upload PDF (Extract Questions)"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="examTitleField" promptText="Enter Exam Title"/>
+
+    <Button fx:id="selectPdfBtn" text="Select PDF"/>
+
+    <Label fx:id="pdfNameLabel" text="No PDF selected"/>
+
+    <Button fx:id="uploadBtn"
+            text="Upload & Extract Questions"
+            style="-fx-background-color:#27ae60; -fx-text-fill:white;" />
+
+    <Label fx:id="statusLabel" text="" />
+
+</VBox>
